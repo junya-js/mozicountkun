@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,600&family=Noto+Serif+JP:wght@700&display=swap" rel="stylesheet" />
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<style>
+			h1 {
+				font-family: "Noto Serif JP", serif;
+			}
+		</style>
+		<title>文字カウント君</title>
+	</head>
+	<body>
+		<div class="container w-full h-screen text-center">
+			<div class="mt-60">
+				<h1 class="text-7xl text-gray-400">文字カウント君</h1>
+				<div class="mt-12">
+					テキスト入力エリア
+					<form class="mt-5">
+						<div>
+							<textarea placeholder="文章を貼り付けてください" id="textbox" class="border-amber-500 h-36 w-1/2 bg-gray-200"></textarea>
+						</div>
+					</form>
+					<p id="countNumOutput" class="mt-12 text-7xl underline"></p>
+				</div>
+			</div>
+		</div>
+		<script src="app.js"></script>
+	</body>
+</html>
